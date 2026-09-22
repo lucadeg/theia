@@ -1,12 +1,9 @@
+
 name: Check New Theia Package
 
 on:
-  pull_request:
-    branches: [master]
-    types: [opened, synchronized, reopened]
-    paths:
-      - 'packages/*/package.json'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   pull-requests: write
   contents: read

@@ -1,3 +1,4 @@
+
 name: Publish packages to NPM
 
 permissions:
@@ -22,9 +23,7 @@ on:
         required: true
         type: boolean
         default: false
-  schedule:
-    - cron: "0 0 * * 1-5" # Publish next version (default) every weekday at midnight
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   publish:
     name: Perform Publishing
